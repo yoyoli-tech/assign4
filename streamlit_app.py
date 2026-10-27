@@ -25,8 +25,8 @@ with tabs[1]:
 with tabs[2]:
     st.subheader(f"Volume for MSFT")
     st.bar_chart(df['Volume'])
-
-# Tab 4: Volume Chart
+    
+# Tab 4: Price vs. Volume
 with tabs[3]:
-    st.subheader(f"Something New")
-    st.bar_chart(df['Volume'])
+    st.subheader("Closing Price vs. Trading Volume")
+    st.scatter_chart(df, x="Close", y="Volume")
